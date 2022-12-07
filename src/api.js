@@ -52,3 +52,7 @@ export const gameDetailsURL = (game_id) =>
 //GAME Screenshots
 export const gameScreenshotsURL = (game_id) =>
   `${MODIFY_API}${game_id}/screenshots?&key=${API_KEY}`;
+
+//Searched Game
+export const searchGameURL = (game_name) =>
+  `${MODIFY_API2}?search=${game_name}&page_size=9.json?&key=${API_KEY}`;
